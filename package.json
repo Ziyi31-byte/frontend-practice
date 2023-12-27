@@ -1,0 +1,38 @@
+{
+  "name": "Assignment-3",
+  "version": "1.0.0",
+  "description": "IT5007",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "compile": "babel src --out-dir public --presets @babel/preset-react",
+    "dev": "nodemon -w src -w server -e js,jsx,graphql --exec 'npm run compile && node server/server.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "prasanna@comp.nus.edu.sg",
+  "license": "ISC",
+  "homepage": "prasannakarthik.com",
+  "dependencies": {
+    "apollo-server-express": "^2.3.1",
+    "express": "^4.16.4",
+    "graphql": "^0.13.2",
+    "mongodb": "^3.1.10",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "html-webpack-plugin": "^5.5.3",
+    "nodemon": "^1.19.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
